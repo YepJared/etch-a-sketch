@@ -3,8 +3,14 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
 .header {
-    margin: 5vh 0;
+    margin: 3vh 0;
     text-align: center;
 }
 
@@ -13,4 +19,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 10%;
+    aspect-ratio: 1/1;
+    max-height: 80vh;
+}
+
+.grid-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex: 1;
+}
+
+.grid-square {
+    display: flex;
+    border: 1px solid black;
+    flex: 1;
+    aspect-ratio: 1/1;
+    height: 100%;
 }
